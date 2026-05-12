@@ -1,0 +1,180 @@
+body {
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+p{
+    
+    font-family: 'Roboto';
+}
+
+h1 {
+    color: white;
+    background-color: #FF4800;
+    padding: 3%; 
+}
+
+h2 {
+    color: #FF4800;
+    background-color: white;
+    padding: 1%;
+}
+
+section p {
+    background-color: white;
+    color: black;
+    padding: 2%;
+    font-size: 1.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2% 4%;
+    transition: background-color 3s ease;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+footer div p {
+    color: white;
+}
+
+#imgSource, #textSource {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+}
+
+.sources {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer div a {
+    color: white
+}
+footer div a:visited, a:active {
+    color: white;
+}
+
+footer:hover {
+    background-color: #FF4800;
+}
+
+
+.link {
+    background-color: #FF4800;
+    padding: 2%;
+    margin: 0% 2%;
+}
+
+#links a {
+    color: white;
+}
+
+#links a:active {
+    color: rgb(100, 70, 0);
+}
+
+#links a:visited {
+    color: yellow;
+}
+
+#links a:hover {
+    color: black;
+}
+
+header #links{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 799px){
+    header #title {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin: 5% 0% 10% 0%;
+    }
+    header #title img {
+        position: relative;
+        z-index: 1;
+    }
+    
+    header #title h1 {
+        position: absolute;
+        top: 45vw;
+        z-index: 2;
+        padding: 5% 15%;
+        margin: 1%;
+    }
+
+    .sec div p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    header #title {
+        max-height: 50%;
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
+        margin: 2% 0%;
+    }
+    header #title img {
+        width: 50vw;
+        height: auto;
+        grid-column: 4 / 5;
+        z-index: 2;
+        position: relative;
+        justify-self: center;
+        grid-row: 1;
+    }
+
+    header #title h1 {
+        padding: 10%;
+        grid-column: 1 / 5;
+        z-index: 1;
+        grid-row: 1;
+        position: relative;
+        margin:0;
+        top: 0vw;
+    }
+
+    .sec{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2%;
+        margin: 4%;
+    }
+
+    .sec div p {
+        font-size: 1.5rem;
+    }
+
+    header #links{
+        display: flex;
+        justify-content:left;
+    }
+}

@@ -1,0 +1,196 @@
+body {
+    background-color: #964734;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+p{
+    
+    font-family: 'Roboto';
+}
+
+h1 {
+    color: white;
+    background-color: #003135;
+    padding: 3%; 
+}
+
+h2 {
+    color: white;
+    background-color: #042950;
+    padding: 1%;
+}
+
+section p {
+    background-color: #0FA4AF;
+    padding: 2%;
+    font-size: 1.5em;
+}
+#links a {
+    color: #042950;
+}
+
+#links a:active {
+    color: #964734;
+}
+
+#links a:visited {
+    color: white;
+}
+
+footer {
+    background-image: linear-gradient(#0FA4AF, #042950);
+    box-shadow: 5px 5px 5px 1px #124E66;
+    margin: 1% 1%;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;    
+}
+
+footer div p {
+    color: black;
+    transition: color 3s ease;
+    
+}
+
+#imgSource, #textSource {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+}
+
+.sources {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer:hover div p {
+    color: white;
+}
+
+footer div a:visited, a:active {
+    color: white;
+}
+
+footer div a:hover {
+    color: #00eaff;
+}
+
+.link {
+    background-color: #0FA4AF;
+    padding: 2%;
+    margin: 0% 2%;
+}
+
+a:hover {
+    color: #00eaff;
+}
+
+section, header #title {
+    background-color: #633023;
+    padding: 2%;
+}
+
+@media screen and (max-width: 799px){
+    header #title h1{
+        margin: 5% 0% 0% 0%;
+    }
+
+    header #title img {
+        display: grid;
+        justify-self: center;
+        align-items: center;
+        width: 75vw;
+    }
+
+    header #links{
+        display: flex;
+        justify-content: space-around;
+        padding: 1%;
+    }
+
+    .even {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .even h2 {
+        grid-row: 1;
+    }
+
+    .even p {
+        grid-row: 2;
+    }
+    .even img {
+        grid-row: 3;
+    }
+
+    div p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    header #title{
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        align-items: center;
+        height: auto;
+        margin: 2% 0%;
+    }
+
+    header #title img {
+        width: 50vw;
+        height: auto;
+        grid-column: 5 / 6;
+        z-index: 2;
+        position: relative;
+        grid-row: 1;
+    }
+
+    header #title h1 {
+        padding: 10%;
+        grid-column: 1 / 6;
+        z-index: 1;
+        grid-row: 1;
+        position: relative;
+        margin:1%;
+    }
+
+    header #links{
+        display: flex;
+        padding: 1%;
+    }
+
+    div p {
+        font-size: 1.5rem;
+    }
+
+    .odd {
+        display: grid;
+        grid-template-columns: 60% auto;
+        align-items: center;
+        gap: 2%;
+        margin: 1%;
+    }
+
+    .even {
+        display: grid;
+        grid-template-columns: auto 60%;
+        align-items: center;
+        gap: 2%;
+        margin: 1%;
+    }
+}
